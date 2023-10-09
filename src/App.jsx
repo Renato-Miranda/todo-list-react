@@ -2,6 +2,7 @@
 /* eslint-disable no-unused-vars */
 import { useState } from 'react'
 import Todo from './components/Todo/Todo'
+import TodoForm from './components/Todo/Form/TodoForm'
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -31,6 +32,7 @@ function App() {
           <Todo todo={todo} />
         ))}
       </div>
+      <TodoForm />
     </div>
 
   )
