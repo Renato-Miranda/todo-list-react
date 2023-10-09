@@ -16,7 +16,7 @@ body {
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
-    background-image: url('/public/robot.jpg');
+    background-image: url('/robot.jpg');
     background-position: center;
     block-size: cover;
 }
