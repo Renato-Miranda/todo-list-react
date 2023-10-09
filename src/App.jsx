@@ -38,7 +38,7 @@ function App() {
 
   return (
     <div className='app'>
-      <h1>To-Do List do Renatão</h1>
+      <h1>To-Do List</h1>
       <div className="todo-list">
         {todos.map((todo) => (
           <Todo key={todo.id} todo={todo} />
