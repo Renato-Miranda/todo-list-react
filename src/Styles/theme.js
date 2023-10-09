@@ -1,3 +1,4 @@
 export const tema = {
-    black: '#252525'
+    black700: '#252525',
+    white500: '#F7F7F7'
 }

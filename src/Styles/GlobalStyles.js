@@ -11,6 +11,7 @@ body {
     width: 100%;
     min-height: 100vh;
     text-decoration: none;
+    /* background-color: ${(props)=> props.theme.black700}; */
 
 }
 
