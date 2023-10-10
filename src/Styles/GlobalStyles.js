@@ -49,6 +49,7 @@ button {
     background-color: #333974;
     color: #fff;
     padding: 5px 10px;
+    margin-right: 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
@@ -58,6 +59,24 @@ button {
 
 button:hover {
     opacity: 1;
+}
+
+.todo-list {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #5555;
+}
+
+.todo{
+    background-color: #fff;
+    box-shadow: 0 0 10px black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .complete {
