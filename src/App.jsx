@@ -5,6 +5,7 @@ import Todo from './components/Todo/Todo'
 import TodoForm from './components/Form/TodoForm'
 import Search from './components/Search/Search'
 import Filter from './components/Filter/Filter'
+import { StylesApp } from './app.styles'
 function App() {
   const [todos, setTodos] = useState([
     {
@@ -56,7 +57,7 @@ function App() {
   }
 
   return (
-    <div className='app'>
+    <StylesApp className='app'>
       <h1>To-Do List</h1>
       <Search search={search} setSearch={setSearch} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
@@ -70,7 +71,7 @@ function App() {
           ))}
       </div>
       <TodoForm addTodo={addTodo} />
-    </div>
+    </StylesApp>
 
   )
 }

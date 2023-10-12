@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { useState } from 'react'
-
+import { StylesTodoForm } from './todoForm.styles'
 const TodoForm = ({ addTodo }) => {
     const [value, setValue] = useState('')
     const [category, setCategory] = useState('')
@@ -15,7 +15,7 @@ const TodoForm = ({ addTodo }) => {
     }
 
     return (
-        <div className="todo-form">
+        <StylesTodoForm className="todo-form">
             <h2>Criar Tarefa:</h2>
             <form onSubmit={handleSubmit}>
                 <input type="text" placeholder="Digite Tarefa" value={value} onChange={(e) => setValue(e.target.value)} />
@@ -27,7 +27,7 @@ const TodoForm = ({ addTodo }) => {
                 </select>
                 <button type="submit">Criar Tarefa</button>
             </form>
-        </div>
+        </StylesTodoForm>
 
     )
 }

@@ -1,8 +1,9 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
+import { StylesFilter } from './filter.styles'
 const Filter = ({ filter, setFilter, setSort }) => {
     return (
-        <div className="filter">
+        <StylesFilter className="filter">
             <h2>Filtrar:</h2>
             <div className="filter-options">
                 <div>
@@ -19,7 +20,7 @@ const Filter = ({ filter, setFilter, setSort }) => {
                     <button onClick={() => setSort('Desc')}>Descendente</button>
                 </div>
             </div>
-        </div>
+        </StylesFilter>
     )
 }
 
