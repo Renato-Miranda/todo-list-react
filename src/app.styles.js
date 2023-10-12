@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StylesApp = styled.section `
-     max-width: 600px;
+    max-width: 600px;
     margin: 0 auto 300px;
     background-color: #efefef;
     padding: 20px 30px;
