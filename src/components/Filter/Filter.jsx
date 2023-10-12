@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { StylesFilter } from './filter.styles'
+import Search from '../Search/Search'
 const Filter = ({ filter, setFilter, setSort }) => {
     return (
         <StylesFilter className="filter">

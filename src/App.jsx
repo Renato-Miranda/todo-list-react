@@ -29,7 +29,7 @@ function App() {
   ])
 
   const [search, setSearch] = useState('')
-
+  const [editingTodoId, setEditingTodoId] = useState(null);
   const [filter, setFilter] = useState('All')
   const [sort, setSort] = useState('Asc')
 
@@ -56,9 +56,32 @@ function App() {
     setTodos(newTodos)
   }
 
+  const startEditing = (id) => {
+    console.log("Iniciando edição para a tarefa com ID:", id);
+    setEditingTodoId(id);
+  };
+
+  const saveEdit = (id, newText, newCategory) => {
+    const newTodos = todos.map((todo) => {
+      if (todo.id === id) {
+        return {
+          ...todo,
+          text: newText,
+          category: newCategory,
+        };
+      }
+      return todo;
+    });
+
+    setTodos(newTodos);
+    setEditingTodoId(editingTodoId); // Limpar a tarefa em edição
+  };
+
+
+
   return (
     <StylesApp className='app'>
-      <h1>To-Do List</h1>
+      <h1 className='titulo'>To-Do List</h1>
       <TodoForm addTodo={addTodo} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
@@ -67,7 +90,8 @@ function App() {
           .filter((todo) => todo.text.toLowerCase().includes(search.toLowerCase()))
           .sort((a, b) => sort === "Asc" ? a.text.localeCompare(b.text) : b.text.localeCompare(a.text))
           .map((todo) => (
-            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} />
+            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} startEditing={startEditing}
+              saveEdit={saveEdit} />
           ))}
       </div>
       <Search search={search} setSearch={setSearch} />

@@ -7,6 +7,11 @@ export const StylesApp = styled.section `
     padding: 20px 30px;
     border-radius: 10px;
 
+    .titulo{
+        font-family: 'MrRobot', sans-serif;
+        color: #BF2441;
+    }
+
     .todo-list {
     margin-bottom: 20px;
     padding-bottom: 20px;

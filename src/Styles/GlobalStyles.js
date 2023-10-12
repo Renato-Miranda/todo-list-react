@@ -11,13 +11,14 @@ body {
     width: 100%;
     min-height: 100vh;
     text-decoration: none;
-    background-color: ${(props)=> props.theme.bg};
+    background-color:#0D080B;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: ${(props)=> props.theme.fontBody};
-    background-image: url('/robot.jpg');
+    /* background-image: url('/robot.jpg'); */
     background-position: center;
     block-size: cover;
+    
 }
 
 h1 {
@@ -27,10 +28,13 @@ h1 {
 
 h2 {
     margin-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#260101; 
 }
 
 p{
     margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 input {
