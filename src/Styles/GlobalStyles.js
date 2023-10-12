@@ -11,7 +11,7 @@ body {
     width: 100%;
     min-height: 100vh;
     text-decoration: none;
-    background-color:#0D080B;
+    background-color:#D9C8BF;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
     color: ${(props)=> props.theme.fontBody};
@@ -29,7 +29,7 @@ h1 {
 h2 {
     margin-bottom: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:#260101; 
+    color:#F2163E; 
 }
 
 p{
