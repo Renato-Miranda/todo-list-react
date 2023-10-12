@@ -10,6 +10,7 @@ export const StylesApp = styled.section `
     .titulo{
         font-family: 'MrRobot', sans-serif;
         color: #BF2441;
+        font-size: 40px;
     }
 
     .todo-list {

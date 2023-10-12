@@ -81,7 +81,7 @@ function App() {
 
   return (
     <StylesApp className='app'>
-      <h1 className='titulo'>To-Do List</h1>
+      <h1 className='titulo'>To-Do List Hacker</h1>
       <TodoForm addTodo={addTodo} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
