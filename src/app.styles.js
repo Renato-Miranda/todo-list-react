@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const StylesApp = styled.section `
     max-width: 600px;
     margin: 0 auto 300px;
-    background-color: rgba(239, 239, 239, 0.5);
+    background-color: rgba(13, 8, 11, 0.9);
     padding: 20px 30px;
     border-radius: 10px;
 

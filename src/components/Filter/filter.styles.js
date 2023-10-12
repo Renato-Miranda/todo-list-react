@@ -14,4 +14,7 @@ export const StylesFilter = styled.section `
     .filter-options div {
     flex: 1 1 0;
 }
+    .filter-options p {
+        color: #fff;
+    }
 `
