@@ -18,6 +18,7 @@ Este é um aplicativo de lista de tarefas desenvolvido em JavaScript e React, pr
 
 - Node.js: Certifique-se de que você tenha o Node.js instalado em sua máquina. Veja como baixar o Node.js.
 - Vite: O aplicativo foi desenvolvido usando o Vite como ferramenta de compilação e desenvolvimento.
+- Styled Components: O aplicativo utiliza o Styled Components para gerenciar estilos e componentização.
 - Biblioteca React-Icons: Utilizamos a biblioteca React-Icons para adicionar ícones aprimorados às tarefas e aos botões de ação.
 - Theme-Provider: O aplicativo utiliza o Theme-Provider para gerenciar temas e estilos.
 
