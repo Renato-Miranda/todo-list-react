@@ -10,8 +10,13 @@ export const StylesTodo = styled.div `
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 20px;
 
-    .complete {
+.content {
+    display: flex;
+}
+
+.complete {
     background-color: #5cb85c;
 }
 

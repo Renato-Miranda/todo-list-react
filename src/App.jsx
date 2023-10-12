@@ -74,7 +74,7 @@ function App() {
     });
 
     setTodos(newTodos);
-    setEditingTodoId(editingTodoId); // Limpar a tarefa em edição
+    setEditingTodoId(editingTodoId);
   };
 
 
