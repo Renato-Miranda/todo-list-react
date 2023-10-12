@@ -59,7 +59,7 @@ function App() {
   return (
     <StylesApp className='app'>
       <h1>To-Do List</h1>
-      <Search search={search} setSearch={setSearch} />
+      <TodoForm addTodo={addTodo} />
       <Filter filter={filter} setFilter={setFilter} setSort={setSort} />
       <div className="todo-list">
         {todos
@@ -70,7 +70,7 @@ function App() {
             <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} />
           ))}
       </div>
-      <TodoForm addTodo={addTodo} />
+      <Search search={search} setSearch={setSearch} />
     </StylesApp>
 
   )
