@@ -162,6 +162,16 @@ Se você quiser contribuir para o desenvolvimento deste projeto, siga estas etap
 
 5. Crie um Pull Request para revisão.
 
+## Referências
+
+- [Vite](https://vitejs.dev/guide/)
+
+- [Styled-Components](https://styled-components.com/docs/basics#installation)
+
+- [React-icons](https://www.npmjs.com/package/react-icons)
+
+- [Theme-provider](https://www.npmjs.com/package/theme-provider)
+
 ## Licença
 
 Este projeto é licenciado sob a [Licença MIT](LICENSE).
