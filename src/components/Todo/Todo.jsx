@@ -15,7 +15,7 @@ const Todo = ({ todo, removeTodo, completeTodo, startEditing, editingTodoId, sav
         startEditing(null);
     };
 
-    if (editingTodoId === todo.id) {
+    if (editingTodoId == todo.id) {
         return (
             <div>
                 <input

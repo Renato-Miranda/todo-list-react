@@ -1,6 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/jsx-key */
 /* eslint-disable no-unused-vars */
-import { useState } from 'react'
+import React, { useState } from 'react'
 import Todo from './components/Todo/Todo'
 import TodoForm from './components/Form/TodoForm'
 import Search from './components/Search/Search'
@@ -74,7 +75,7 @@ function App() {
     });
 
     setTodos(newTodos);
-    setEditingTodoId(editingTodoId);
+    setEditingTodoId(null);
   };
 
 
@@ -90,10 +91,34 @@ function App() {
           .filter((todo) => todo.text.toLowerCase().includes(search.toLowerCase()))
           .sort((a, b) => sort === "Asc" ? a.text.localeCompare(b.text) : b.text.localeCompare(a.text))
           .map((todo) => (
-            <Todo key={todo.id} todo={todo} removeTodo={removeTodo} completeTodo={completeTodo} startEditing={startEditing}
-              saveEdit={saveEdit} />
+            <React.Fragment key={todo.id}> {/* Adicionei um React.Fragment para envolver os elementos */}
+              {editingTodoId === todo.id ? (
+                // Renderizar no modo de edição
+                <Todo
+                  key={todo.id}
+                  todo={todo}
+                  removeTodo={removeTodo}
+                  completeTodo={completeTodo}
+                  startEditing={startEditing}
+                  saveEdit={saveEdit}
+                  editingTodoId={editingTodoId}
+                />
+              ) : (
+                // Renderizar no modo de visualização
+                <Todo
+                  key={todo.id}
+                  todo={todo}
+                  removeTodo={removeTodo}
+                  completeTodo={completeTodo}
+                  startEditing={startEditing}
+                  saveEdit={saveEdit}
+                  editingTodoId={null}
+                />
+              )}
+            </React.Fragment>
           ))}
       </div>
+
       <Search search={search} setSearch={setSearch} />
     </StylesApp>
 
