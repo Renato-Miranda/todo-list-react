@@ -66,6 +66,62 @@ Siga estas etapas para executar o aplicativo em sua máquina:
 
 O aplicativo estará disponível em `http://localhost:5173`.
 
+# Como Utilizar o Aplicativo
+
+Este aplicativo de lista de tarefas é fácil de usar e oferece várias funcionalidades para ajudar você a gerenciar suas tarefas. Abaixo, fornecemos um guia detalhado de exemplo sobre como utilizar as principais funcionalidades.
+
+## Adicionar uma Tarefa
+
+1. Digite um título para a tarefa.
+
+   - Exemplo: "Regar as plantas"
+
+2. Escolha uma categoria para a tarefa. Você pode criar suas próprias categorias, como "Pessoal," "Trabalho" ou "Estudos," para organizar melhor suas tarefas.
+
+   - Exemplo: "Pessoal"
+
+3. Pressione a tecla [Enter] ou clique no botão Criar Tarefa para adicionar a tarefa à lista.
+
+A tarefa "Regar as Plantas" será adicionada à categoria "Casa" em sua lista de tarefas.
+
+## Concluir uma Tarefa
+
+1. Na lista de tarefas, você verá uma opção de marca de seleção ao lado de cada tarefa.
+
+2. Clique na marca de seleção ao lado da tarefa que deseja marcar como concluída.
+
+A tarefa será marcada como concluída e destacada na lista.
+
+## Editar uma Tarefa
+
+1. Encontre a tarefa que deseja editar na lista.
+
+2. Clique no botão "Editar".
+
+3. Uma caixa de edição de texto aparecerá, permitindo que você modifique o título e a categoria.
+
+   - Exemplo: Você pode atualizar a categoria para "Trabalho" e adicionar mais detalhes à descrição, como "Desenvolver funcionalidade x."
+
+4. Após fazer as alterações desejadas, pressione a tecla [Enter] ou clique em "Salvar".
+
+A tarefa será atualizada com as informações editadas.
+
+## Buscar uma Tarefa
+
+1. Na parte inferior do aplicativo, você encontrará um campo de pesquisa.
+
+2. Digite palavras-chave ou parte do título de uma tarefa que deseja encontrar.
+
+   - Exemplo: Se você deseja encontrar a tarefa "Ir ao mercado," digite "mercado" na caixa de pesquisa.
+
+3. À medida que você digita, o aplicativo atualizará automaticamente a lista de tarefas, mostrando apenas as tarefas que correspondem à sua pesquisa.
+
+<img src='./public/print_app.png'/>
+
+Este guia fornece exemplos práticos de como usar as funcionalidades do aplicativo, desde a adição de tarefas até a busca e edição. Sinta-se à vontade para explorar e personalizar ainda mais o uso do aplicativo de acordo com suas necessidades.
+
+Esperamos que este guia seja útil para tornar a gestão de tarefas mais eficiente com nosso aplicativo!
+
 ## Documentação
 
 ### Como Baixar o Node.js
